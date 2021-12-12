@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SemiTransparentGlassWebsite UI Design</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<section>
+			<header>
+				<a href="#" class="logo">Water.</a>
+				<div class="toggle" onclick="menuToggle();"></div>
+			</header>
+			<div class="glass"></div>
+			<video src="water.mp4" autoplay muted loop></video>
+		</section>
+		<script type="text/javascript">
+			function menuToggle() {
+				const toggleMenu = document.querySelector(".toggle");
+				const section = document.querySelector("section");
+				toggleMenu.classList.toggle("active");
+				toggleMenu.classList.toggle("active");
+			}
+		</script>
+	</body>
+</html>
